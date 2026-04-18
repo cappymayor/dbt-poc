@@ -3,9 +3,9 @@ my_redshift_project:
   outputs:
     dev:
       type: redshift
-      host: "redshift-cluster-1.cgjf9xzsnjp1.eu-north-1.redshift.amazonaws.com"
-      user: "demo"
-      password: "Demo12345678"
+      host: "dbt-poc.cgjf9xzsnjp1.eu-north-1.redshift.amazonaws.com"
+      user: "infra-admin"
+      password: "RCNXIuhgci550%&"
       port: 5439
       dbname: "dev"
       schema: "dbt_analytics"  # The schema where dbt will build your table
