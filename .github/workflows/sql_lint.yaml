@@ -1,0 +1,20 @@
+name: CD pipeline
+
+on:
+  push:
+    branches:
+      - "master" 
+    paths:
+      - '**.sql'
+      
+jobs:
+  build-deploy:
+    name: checkout
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run SQLFluff lint
+        run: sqlfluff lint dbt_proj/models/
