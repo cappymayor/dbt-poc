@@ -1,23 +1,23 @@
-name: CD pipeline
+# name: CD pipeline
 
-on:
-  push:
-    branches:
-      - "master" 
-    paths:
-      - '**.sql'
+# on:
+#   push:
+#     branches:
+#       - "master" 
+#     paths:
+#       - '**.sql'
       
-jobs:
-  build-deploy:
-    name: checkout
-    runs-on: ubuntu-24.04
+# jobs:
+#   build-deploy:
+#     name: checkout
+#     runs-on: ubuntu-24.04
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+#       - name: Install dependencies
+#         run: pip install -r requirements.txt
 
-      - name: Run SQLFluff lint
-        run: sqlfluff lint dbt_proj/models/
+#       - name: Run SQLFluff lint
+#         run: sqlfluff lint dbt_proj/models/

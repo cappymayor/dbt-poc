@@ -1,2 +1,0 @@
-dbt-redshift==1.10.1
-sqlfluff==4.1.0
