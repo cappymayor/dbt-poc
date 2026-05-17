@@ -21,7 +21,7 @@ model-paths: ["dbt_proj/models"]
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  Redshift_DBT:
+  anything:
     # Config indicated by + and applies to all files under models/example/
     # Redshift_DBT:
     +materialized: table
