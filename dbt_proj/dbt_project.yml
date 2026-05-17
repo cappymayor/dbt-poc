@@ -1,0 +1,17 @@
+
+name: 'snowflake-debt-test'
+version: '1.0.0'
+config-version: 2
+
+
+profile: 'dbt_poc'
+
+
+target-path: "target"  # directory which will store compiled SQL files
+
+models:
+  dbt_poc:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+      +schema: public
