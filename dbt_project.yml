@@ -23,6 +23,6 @@ model-paths: ["dbt_proj/models"]
 models:
   snowflake-dbt:
     # Config indicated by + and applies to all files under models/example/
-    gold:
+    +gold:
     +materialized: table
-    # +schema: public
+    +schema: public
