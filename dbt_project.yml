@@ -11,7 +11,7 @@ profile: 'dbt-demo-poc'
 # clean-targets:         # directories to be removed by `dbt clean`
 #   - "target"
 #   - "dbt_packages"
-model-paths: ["dbt_proj/modelss"]
+model-paths: ["dbt_proj/models"]
 
 
 # Configuring models
@@ -21,8 +21,8 @@ model-paths: ["dbt_proj/modelss"]
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  anything:
+  # anything:
     # Config indicated by + and applies to all files under models/example/
     # Redshift_DBT:
-    +materialized: table
-    +schema: public
+  +materialized: table
+  +schema: public
