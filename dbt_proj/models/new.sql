@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
 
-select '1' as price;
+select '1' as price
