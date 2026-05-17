@@ -1,5 +1,5 @@
 -- models/my_first_model.sql
-SELECT 
-    2 as id,
-    'Federated Engineers' as company_name,
-    CURRENT_DATE as date_created
+SELECT
+    2 AS id
+    , 'Federated Engineers' AS company_name
+    , CURRENT_DATE AS create_at
