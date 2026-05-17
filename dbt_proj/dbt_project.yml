@@ -13,6 +13,7 @@ profile: 'dbt_poc'
 #   - "dbt_packages"
 model-paths: ["models"]
 
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
