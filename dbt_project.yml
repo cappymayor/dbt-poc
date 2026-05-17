@@ -11,7 +11,7 @@ profile: 'dbt-demo-poc'
 # clean-targets:         # directories to be removed by `dbt clean`
 #   - "target"
 #   - "dbt_packages"
-model-paths: ["dbt_proj/models"]
+model-paths: ["dbt_proj/modelss"]
 
 
 # Configuring models
